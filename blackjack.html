@@ -1,0 +1,295 @@
+<!doctype HTML>
+<html lang="en">
+	
+	<head>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="css/blackjack.css" rel="stylesheet">
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+		<!-- Icons -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+
+		
+		
+		<!-- section1 -->
+		
+		<div class="container" id="section1">
+			<h1 class="welcome"></h1>
+			<p class="welcome"></p>
+			<div id="buttons">
+
+					<button type="button" class="btn" id="yesbtn"><i class="fa fa-check fa-2x" aria-hidden="true"></i>YES</button> 
+					<button type="button" class="btn" id="nobtn"><i class="fa fa-times fa-2x" aria-hidden="true"></i>NO</button>
+
+			</div>
+
+
+		</div>
+
+		<!-- end of section1 -->
+
+
+		<!-- section2 -->
+
+		<div class="container" id="section2">
+
+			<div class="row new-buttons">
+				<div class="col-md-5 col-sm-5 col-sm-offset-1 col-xs-6 text-right" id="newgamebtndiv">
+					<button type="button" class="btn" id="newgamebtn">New Game</button> 
+				</div>
+				<div class="col-md-5 col-sm-5 col-sm-offset-1 col-xs-6" id="nextroundbtndiv">
+					<button type="button" disabled="disabled" class="btn" id="nextroundbtn">Next Round</button> 
+				</div>
+			</div>
+
+			<div class="col-lg-12 game-buttons">
+				<!--<div class="col-md-1 col-md-offset-1">
+					<button type="button" class="btn" id="betbtn"><i class="fa fa-money fa-2x" aria-hidden="true"></i> BET</button>
+					<div class="form">
+						<form role="form" id="betform">
+							<input type="number" id="betinput" placeholder="Enter your bet"><button type="button" class="btn" id="betsubmit"> GO!</button>
+						</form>
+					</div>
+				</div> -->
+				<div class="col-md-2 col-sm-2 col-xs-6" id="hitbtndiv">
+					<button type="button" disabled="disabled" class="btn" id="hitbtn"><i class="fa fa-magic fa-2x" aria-hidden="true"></i> HIT</button> 
+				</div>
+ 				<div class="col-md-2 col-sm-2 col-xs-6">
+					<button type="button" disabled="disabled" class="btn" id="standbtn"><i class="fa fa-minus-circle fa-2x" aria-hidden="true"></i> STAND</button>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-6">
+					<button type="button" disabled="disabled" class="btn" id="doublebtn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>  DOUBLE</button>
+				</div>				
+ 				<div class="col-md-2 col-sm-2 col-xs-6">
+					<button type="button" disabled="disabled" class="btn" id="surrenderbtn"><i class="fa fa-flag-o fa-2x" aria-hidden="true"></i> SURRENDER</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- end of section2 -->
+
+
+		<!-- section3 -->
+
+		
+		<div class="container" id="section3">
+			<div class="col-md-2 col-sm-12 col-xs-12" id="message-box">
+				<h4 id="message"></h4>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-12 stackbet" id="stack">
+				<h4>Stack</h4>
+				<i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+				<h1 id="stackvalue"></h1>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-12 stackbet" id="betform">
+				<form role="form">
+					<input type="number" id="betinput" placeholder="Enter the bet"><button type="submit" class="btn" id="betsubmit"> GO!</button>
+				</form>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-12 stackbet" id="betting-box">
+				<h4>Betting Box</h4>
+				<i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+				<h1></h1>
+			</div>
+		</div>
+		
+
+		<!-- end of section3 -->
+
+
+		<!-- section4 -->
+
+		<div class="container" id="section4">
+			<div class="row" id="playercards">
+				<div class="col-md-1 col-sm-12 col-xs-12 info">
+					<h4 id="playername"></h4>
+					
+					<div class="row">
+						<p id="displayplayerhandsum"></p>
+					</div>
+
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard1">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard2">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard3">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard4">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard5">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard6">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard7">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard8">
+						<img class="img-responsive" src="">
+					</div>
+				</div>	
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard9">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="playercard10">
+						<img class="img-responsive" src="">
+					</div>
+				</div>							
+			</div>
+			<div class="row" id="dealercards">
+				<div class="col-md-1 col-sm-12 col-xs-12 info">
+					<h4 id="dealername"></h4>
+					<div class="row">
+						<p id="displaydealerhandsum"></p>
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard1">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard2">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard3">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard4">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard5">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard6">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard7">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard8">
+						<img class="img-responsive" src="">
+					</div>
+				</div>	
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard9">
+						<img class="img-responsive" src="">
+					</div>
+				</div>
+				<div class="col-md-1 col-sm-6 col-xs-12">
+					<div class="thumbnail" id="dealercard10">
+						<img class="img-responsive" src="">
+					</div>
+				</div>			
+			</div>
+		</div>
+
+		<!-- end of section4 -->
+
+		<!-- slidetoggle -->
+
+		<div id="entry-content">
+
+			<div id="arrow"><i class="fa fa-angle-double-left fa-3x"></i></div>
+			<div id="pull-me">rules</div>
+
+			<div id="panel">
+				        <p>The object of the game is to beat the dealer in one of the following ways:<br>
+				       	(1) Get 21 points on the player's first two cards (called a "blackjack" or "natural"), without a dealer blackjack;<br>
+						(2) Reach a final score higher than the dealer without exceeding 21; or<br>
+						(3) Let the dealer draw additional cards until his or her hand exceeds 21.<br><br>
+
+						The player is dealt a two-card hand and add together the value of their cards. Face cards (kings, queens, and jacks) are counted as ten points. A player and the dealer can count an ace as 1 point or 11 points. All other cards are counted as the numeric value shown on the card.<br><br>
+
+						After receiving their first two cards, player has the option of getting a "hit", or taking an additional card. In a given round, the player or the dealer wins by having a score of 21 or by having the higher score that is less than 21. <br><br>
+
+						The dealer must hit until the cards total 17 or more points. <br><br>
+
+						Player decisions: <br><br>
+
+						<strong>Hit</strong>: Take another card from the dealer.<br>
+						<strong>Stand</strong>: Take no more cards.<br>
+						<strong>Double</strong>: After receiving the second card, the player is allowed to increase the initial bet by up to 100% in exchange for committing to stand after receiving exactly one more card.<br>
+						<strong>Surrender</strong>: After receiving the second card, the player has the right to surrender. When the player surrenders, the house takes half the player's bet and returns the other half to the player; this terminates the player's interest in the hand.<br><br>
+						</p>
+
+
+			</div>
+			
+			
+
+		</div>
+
+
+		<!-- end of slidetoggle -->
+
+
+
+
+
+
+
+		
+		<!-- jQuery -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+		<!-- jQuery UI -->
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+		<!-- JavaScript -->
+	
+		<script src="js/blackjack.js"></script>	
+
+	</body>
+	
+
+</html>
